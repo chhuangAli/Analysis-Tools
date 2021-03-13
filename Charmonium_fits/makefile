@@ -23,4 +23,4 @@ GOrun: $(OBJS)
 
 
 clean:
-	rm GOrun 
+	rm GOrun *.o 
