@@ -1,0 +1,580 @@
+arrayAvailableCentBins: 10
+arrayAvailableCentBins: 20
+arrayAvailableCentBins: 30
+arrayAvailableCentBins: 40
+arrayAvailableCentBins: 50
+arrayAvailableCentBins: 60
+arrayAvailableCentBins: 70
+arrayAvailableCentBins: 80
+arrayAvailableCentBins: 90
+Cent0to10
+Pt0to0.3
+Pt0.3to1
+Pt1to2
+Pt2to3
+Pt3to4
+Pt4to5
+Pt5to6
+Pt6to7
+Pt7to8
+Pt8to9
+Pt9to10
+Pt10to11
+Pt11to12
+Cent10to20
+Pt0to0.3
+Pt0.3to1
+Pt1to2
+Pt2to3
+Pt3to4
+Pt4to5
+Pt5to6
+Pt6to7
+Pt7to8
+Pt8to9
+Pt9to10
+Pt10to11
+Pt11to12
+Cent0to10
+Pt0to0.3
+Pt0.3to1
+Pt1to2
+Pt2to3
+Pt3to4
+Pt4to5
+Pt5to6
+Pt6to7
+Pt7to8
+Pt8to9
+Pt9to10
+Pt10to11
+Pt11to12
+Cent10to20
+Pt0to0.3
+Pt0.3to1
+Pt1to2
+Pt2to3
+Pt3to4
+Pt4to5
+Pt5to6
+Pt6to7
+Pt7to8
+Pt8to9
+Pt9to10
+Pt10to11
+Pt11to12
+Cent0to10
+Pt0to0.3
+Pt0.3to1
+Pt1to2
+Pt2to3
+Pt3to4
+Pt4to5
+Pt5to6
+Pt6to7
+Pt7to8
+Pt8to9
+Pt9to10
+Pt10to11
+Pt11to12
+Cent10to20
+Pt0to0.3
+Pt0.3to1
+Pt1to2
+Pt2to3
+Pt3to4
+Pt4to5
+Pt5to6
+Pt6to7
+Pt7to8
+Pt8to9
+Pt9to10
+Pt10to11
+Pt11to12
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       2652 CALLS        2653 TOTAL
+                     EDM=0.000998762    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.27874e+04   5.91919e+01   9.51228e-02   8.45754e-03
+   2  p1           2.04056e+00   7.80379e-02   1.84998e-04  -3.21285e+01
+   3  p2          -2.47340e-03   1.70192e-03   1.46233e-05   2.93613e+02
+   4  p3           1.03792e+00   2.64557e-02   6.03999e-05   8.80508e+01
+   5  p4          -1.82182e-01   9.73242e-03   7.30463e-05   5.87152e+01
+                               ERR DEF= 0.5
+ FCN=38.4339 FROM MIGRAD    STATUS=CONVERGED    2812 CALLS        2813 TOTAL
+                     EDM=2.22711e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_VWG   7.29303e+03   2.46450e+03   1.62675e-05   4.17782e-02
+   2  a2           2.10855e+00   1.21843e-01   1.26629e-06  -4.01988e-01
+   3  a3          -1.42306e-03   1.80684e-03   9.72065e-08  -3.47427e+00
+   4  a4           1.24116e+00   1.71297e-01   3.99908e-07   2.65030e+00
+   5  a5          -2.72420e-01   8.67386e-02   5.50320e-07   2.94902e+00
+   6  Normalization_CB2   1.32604e+03   2.82774e+01   2.35325e-05  -4.04946e-03
+   7  mean         3.09842e+00   1.56026e-03   1.22211e-04   1.33557e-03
+   8  sigma        6.65945e-02   1.75192e-03   1.65502e-04  -1.05950e-03
+   9  alpha        9.74000e-01     fixed    
+  10  n            6.97000e+00     fixed    
+  11  alpha_up     1.86000e+00     fixed    
+  12  n_up         1.49900e+01     fixed    
+  13  Normalization_Psi(2S)   3.04390e+01   1.72166e+01   2.40936e-04   2.06965e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2VWG_pp13_2.20_4.50
+num jpsi: 10103.9
+fit validation: 0
+fit status: 0
+fit covariant matrix: 3
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=CONVERGED    2076 CALLS        2077 TOTAL
+                     EDM=0.0149049    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   5.1 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.69791e+03   2.78094e+01   0.00000e+00  -4.48531e+01
+   2  p1           8.77970e-01   1.31165e-01  -0.00000e+00  -6.74247e+01
+   3  p2           5.35037e+00   1.59174e-01   0.00000e+00  -4.69465e+01
+   4  p3          -1.50725e+00   2.69072e-01   0.00000e+00  -1.92864e+02
+   5  p4           1.95807e-01   7.60795e-02  -0.00000e+00  -6.90635e+02
+                               ERR DEF= 0.5
+ FCN=37.6723 FROM MIGRAD    STATUS=CONVERGED    1108 CALLS        1109 TOTAL
+                     EDM=8.14602e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_VWG   1.78358e+03   1.78746e+02   3.83707e-06   2.67123e-01
+   2  a2           1.09289e+00   7.24812e-01   3.19174e-06   4.39441e-01
+   3  a3           2.39475e+00   8.15719e-01   2.96133e-06   5.77405e-01
+   4  a4          -1.12214e-01   1.96295e-01   1.12118e-06   1.72120e+00
+   5  a5           2.07584e-02   5.11456e-02   4.15950e-07   5.13951e+00
+   6  Normalization_CB2   1.31631e+03   2.82339e+01   1.59650e-05  -3.07589e-02
+   7  mean         3.09709e+00   1.56776e-03   1.23465e-04   1.04264e-03
+   8  sigma        6.82088e-02   1.80934e-03   1.66734e-04  -1.34526e-03
+   9  alpha        1.15330e+00     fixed    
+  10  n            3.07834e+00     fixed    
+  11  alpha_up     2.10739e+00     fixed    
+  12  n_up         3.01263e+00     fixed    
+  13  Normalization_Psi(2S)   3.05480e+01   1.76092e+01   3.00438e-04   1.97393e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2VWG_geant3_2.20_4.50
+num jpsi: 10303.1
+fit validation: 0
+fit status: 0
+fit covariant matrix: 3
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       2811 CALLS        2812 TOTAL
+                     EDM=4.97728e-05    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.26957e+04   1.37336e+02   4.03180e-02   8.74156e-02
+   2  p1           1.05335e+00   4.98362e-02   1.12466e-04  -3.99181e+01
+   3  p2           1.16993e-02   1.73495e-02   6.81122e-05   6.69521e+01
+   4  p3           5.61883e-01   1.02299e-02   3.07750e-05   1.33593e+02
+   5  p4          -4.35761e-02   1.52038e-03   1.10806e-05   2.98023e+02
+                               ERR DEF= 0.5
+ FCN=40.9525 FROM MIGRAD    STATUS=CONVERGED     434 CALLS         435 TOTAL
+                     EDM=9.01796e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.0 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_VWG   1.24004e+04   1.41182e+02   8.82597e-06   2.25287e-02
+   2  a2           1.00732e+00   1.51914e-02  -2.83396e-07   1.10856e-01
+   3  a3          -1.57585e-02   1.24989e-02  -5.04933e-08   1.08003e+00
+   4  a4           5.67563e-01   1.76093e-03   3.71435e-09   2.46108e+00
+   5  a5          -4.53452e-02   7.09734e-04  -3.60638e-08   4.34519e+00
+   6  Normalization_CB2   1.32848e+03   2.78272e+01  -9.24236e-07  -7.09854e-03
+   7  mean         3.09846e+00   1.51886e-03   3.45359e-05   7.19827e-03
+   8  sigma        6.69722e-02   1.77197e-03  -2.54063e-06   2.55542e-03
+   9  alpha        9.74000e-01     fixed    
+  10  n            6.97000e+00     fixed    
+  11  alpha_up     1.86000e+00     fixed    
+  12  n_up         1.49900e+01     fixed    
+  13  Normalization_Psi(2S)   3.58662e+01   1.57434e+01   7.11269e-05  -2.94030e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2VWG_pp13_2.40_4.70
+num jpsi: 10168.8
+fit validation: 0
+fit status: 0
+fit covariant matrix: 3
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED      13905 CALLS       13906 TOTAL
+                     EDM=0.00112609    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.19051e+04   4.83899e+02   1.30230e-02   5.83022e-01
+   2  p1           1.26498e-01   7.96873e-03   1.39373e-05  -6.02039e+02
+   3  p2           4.17439e-02   4.94192e-02   2.07287e-04   3.71648e+01
+   4  p3           7.18141e-02   1.30156e-03   3.82530e-06   2.03504e+03
+   5  p4          -6.27680e-04   2.01995e-05   1.26330e-07   5.46718e+04
+                               ERR DEF= 0.5
+ FCN=39.3187 FROM MIGRAD    STATUS=CONVERGED    1574 CALLS        1575 TOTAL
+                     EDM=1.39127e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_VWG   1.12640e+04   1.03414e+04   4.09587e-05   1.90657e-02
+   2  a2           1.02883e-01   1.73462e-02   4.87809e-08  -1.51101e+01
+   3  a3          -3.86847e-02   5.24216e-02   9.25522e-07   8.84037e-01
+   4  a4           6.45180e-02   9.94810e-03   1.43746e-08   8.52600e+01
+   5  a5          -5.03168e-04   1.54776e-04   4.13384e-10   3.85591e+03
+   6  Normalization_CB2   1.32388e+03   2.79679e+01   2.34775e-05  -2.04705e-02
+   7  mean         3.09715e+00   1.55628e-03   1.25818e-04   2.44035e-03
+   8  sigma        6.90137e-02   1.78462e-03   1.70278e-04  -2.20458e-03
+   9  alpha        1.14382e+00     fixed    
+  10  n            3.15488e+00     fixed    
+  11  alpha_up     2.10720e+00     fixed    
+  12  n_up         3.00471e+00     fixed    
+  13  Normalization_Psi(2S)   3.64665e+01   1.69924e+01   2.80148e-04   2.77434e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2VWG_geant3_2.40_4.70
+num jpsi: 10447.9
+fit validation: 0
+fit status: 0
+fit covariant matrix: 3
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       3339 CALLS        3340 TOTAL
+                     EDM=0.000489573    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.67943e+03   8.80656e+01   1.25989e-03   4.97332e+00
+   2  p1           1.27848e+01   3.69171e-01   3.01637e-04   2.06092e+01
+   3  p2          -1.20835e+00   7.54891e-02   8.82135e-05   6.67579e+01
+   4  p3           2.80546e+01   7.65584e-01   1.12409e-03  -6.00504e+00
+   5  p4          -6.63542e+00   3.54842e-01   4.21334e-04  -1.35681e+01
+   6  p5          -1.61989e-01   1.45740e-01   1.50819e-04  -3.42914e+01
+   7  p6           1.14930e+00   5.08020e-02   9.51463e-05  -4.95328e+01
+                               ERR DEF= 0.5
+ FCN=39.4029 FROM MIGRAD    STATUS=CONVERGED     901 CALLS         902 TOTAL
+                     EDM=3.51875e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   5.9 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_Pol2overPol3   3.07012e+03   8.35947e+02  -6.66415e-04   1.25562e-01
+   2  a1           1.60971e+01   1.89378e+00  -8.38517e-05   9.64247e-01
+   3  a2          -2.44497e+00   5.29716e-01   2.22859e-05   3.73906e+00
+   4  b1           2.77358e+01   1.39506e+00   9.43250e-06  -8.07737e-02
+   5  b2           2.52371e+00   5.86410e+00  -2.56477e-04  -2.88157e-01
+   6  b3           1.44757e+00   1.12667e+00  -5.03225e-05  -9.67198e-01
+   7  b4           6.80632e-01   2.64100e-01   2.17214e-05  -1.90779e+00
+   8  Normalization_CB2   1.32229e+03   2.78968e+01   6.21692e-07   1.16438e-02
+   9  mean         3.09852e+00   1.55835e-03  -1.20817e-05   3.73509e-03
+  10  sigma        6.61232e-02   1.73656e-03   5.49520e-05   1.18996e-03
+  11  alpha        9.74000e-01     fixed    
+  12  n            6.97000e+00     fixed    
+  13  alpha_up     1.86000e+00     fixed    
+  14  n_up         1.49900e+01     fixed    
+  15  Normalization_Psi(2S)   3.06076e+01   1.75232e+01  -1.02513e-04  -7.67707e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2Pol_pp13_2.20_4.50
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       1177 CALLS        1178 TOTAL
+                     EDM=0.0108864    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.71434e+03   1.41439e+02   1.68346e-03  -2.16922e+01
+   2  p1           3.58523e+01   1.14279e+00   9.41983e-04  -4.49618e+01
+   3  p2          -2.91917e+00   2.14019e-01   2.60059e-04  -2.09062e+02
+   4  p3           9.94248e+01   1.17410e+00   3.70032e-02   1.72945e-01
+   5  p4           1.49009e+00   1.57575e+00   1.96967e-03   1.09902e+01
+   6  p5          -1.36021e+01   7.11554e-01   7.17146e-04   5.22476e+01
+   7  p6           7.21196e+00   2.54696e-01   4.57036e-04   1.14081e+02
+                               ERR DEF= 0.5
+ FCN=37.6954 FROM MIGRAD    STATUS=CONVERGED    1331 CALLS        1332 TOTAL
+                     EDM=5.08552e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  11.3 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_Pol2overPol3   5.41860e+03   1.49278e+03   3.36217e-04   2.47532e-01
+   2  a1           4.89426e+01   6.34811e+00   1.03133e-04   7.90768e-01
+   3  a2          -7.39299e+00   1.75070e+00  -2.36700e-05   3.16719e+00
+   4  b1           9.97680e+01   7.21470e+00  -5.52547e-04   3.33093e-03
+   5  b2           5.27376e+01   2.98504e+01   5.01318e-04  -1.43583e-01
+   6  b3          -3.12363e+00   7.15265e+00   1.02916e-04  -6.04506e-01
+   7  b4           4.54644e+00   1.68149e+00  -4.40158e-05  -1.04104e+00
+   8  Normalization_CB2   1.31723e+03   2.66340e+01  -7.20583e-06  -3.93204e-02
+   9  mean         3.09713e+00   1.55247e-03  -3.99826e-06   1.92485e-03
+  10  sigma        6.83026e-02   1.74310e-03   3.53351e-05   3.54860e-03
+  11  alpha        1.15330e+00     fixed    
+  12  n            3.07834e+00     fixed    
+  13  alpha_up     2.10739e+00     fixed    
+  14  n_up         3.01263e+00     fixed    
+  15  Normalization_Psi(2S)   3.13791e+01   1.46624e+01  -4.84691e-05   5.94698e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2Pol_geant3_2.20_4.50
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=CONVERGED     334 CALLS         335 TOTAL
+                     EDM=0.00018371    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   4.2 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.64188e+03   7.64589e+01   0.00000e+00   4.54834e+00
+   2  p1           5.35197e+00   4.53190e-01   0.00000e+00   3.72295e+01
+   3  p2          -7.78871e-01   1.04907e-01  -0.00000e+00   8.82160e+01
+   4  p3           6.07747e+00   1.31094e+00   0.00000e+00  -1.04010e+01
+   5  p4           9.55248e-01   8.07523e-02   0.00000e+00  -2.46397e+01
+   6  p5           9.24579e-01   2.09641e-02  -0.00000e+00  -7.46669e+01
+   7  p6           1.53353e-01   2.61207e-03  -0.00000e+00  -1.33757e+02
+                               ERR DEF= 0.5
+ FCN=38.3479 FROM MIGRAD    STATUS=CONVERGED    6511 CALLS        6512 TOTAL
+                     EDM=1.5154e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.3 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_Pol2overPol3   8.35789e+03   6.51739e+02  -7.93230e-05  -9.45973e-02
+   2  a1           1.44259e-01   7.51389e-01  -1.05871e-05   4.09141e+00
+   3  a2           1.42401e-01   1.51386e-01   2.30539e-06  -5.83166e-01
+   4  b1          -9.01941e+01   3.37558e+00  -4.05068e-05  -1.82273e-01
+   5  b2           9.98940e+01   2.45427e-01   6.78106e-05  -4.27488e-02
+   6  b3          -3.48485e+01   1.39169e+00  -2.20523e-05  -2.06767e+00
+   7  b4           4.53163e+00   3.01276e-01   7.30458e-06  -1.75893e+00
+   8  Normalization_CB2   1.32405e+03   2.85104e+01  -6.81498e-07   6.77565e-02
+   9  mean         3.09781e+00   1.58606e-03   4.23037e-07   4.39028e-03
+  10  sigma        6.68518e-02   1.82302e-03  -4.63194e-06   5.73442e-03
+  11  alpha        9.74000e-01     fixed    
+  12  n            6.97000e+00     fixed    
+  13  alpha_up     1.86000e+00     fixed    
+  14  n_up         1.49900e+01     fixed    
+  15  Normalization_Psi(2S)   2.54868e+01   1.64304e+01   3.67588e-06  -1.77683e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2Pol_pp13_2.40_4.70
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       4399 CALLS        4400 TOTAL
+                     EDM=0.00393666    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.45791e+02   4.77086e+01   6.59238e-04   6.16956e+01
+   2  p1           1.37131e+01   2.78779e-01   2.53059e-04   1.46683e+02
+   3  p2          -1.85290e+00   5.25444e-02   6.38020e-05   5.05231e+02
+   4  p3           6.11080e+00   4.31799e-01   6.51661e-04  -6.23415e+01
+   5  p4           2.71587e-01   1.88344e-01   2.25143e-04  -1.86795e+02
+   6  p5           4.87641e-01   6.71534e-02   6.91958e-05  -5.85468e+02
+   7  p6           2.20403e-01   1.95486e-02   3.75093e-05  -9.62900e+02
+                               ERR DEF= 0.5
+ FCN=39.6505 FROM MIGRAD    STATUS=CONVERGED     635 CALLS         636 TOTAL
+                     EDM=5.09578e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.1 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_Pol2overPol3   9.48841e+02   1.02466e+02   7.37107e-05  -2.75269e-01
+   2  a1           1.36616e+01   1.04004e-01   3.05625e-06  -8.59000e-01
+   3  a2          -2.12353e+00   1.83979e-01  -6.19971e-06  -3.60573e+00
+   4  b1           4.46874e+00   2.97262e+00  -1.04175e-04   3.62905e-01
+   5  b2           1.75785e+00   1.75157e+00   6.13295e-05  -1.52932e+00
+   6  b3           5.97996e-01   2.26564e-01   7.88120e-06   1.20538e+01
+   7  b4           8.71925e-02   1.24168e-01  -8.59266e-06  -4.25957e+00
+   8  Normalization_CB2   1.32298e+03   2.86111e+01   4.88998e-06   4.41329e-02
+   9  mean         3.09722e+00   1.56775e-03  -2.80511e-05  -9.71955e-04
+  10  sigma        6.88912e-02   1.88446e-03   1.94180e-04   1.73198e-03
+  11  alpha        1.14382e+00     fixed    
+  12  n            3.15488e+00     fixed    
+  13  alpha_up     2.10720e+00     fixed    
+  14  n_up         3.00471e+00     fixed    
+  15  Normalization_Psi(2S)   3.76607e+01   1.68301e+01   1.09790e-05   4.02203e-04
+                               ERR DEF= 0.5
+JPsiSignalfitFuncCB2Pol_geant3_2.40_4.70
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       1674 CALLS        1675 TOTAL
+                     EDM=20281.2    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  61.3 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.69131e+03   4.13015e+03  -0.00000e+00   8.57480e-01
+   2  p1           1.00246e+00   6.48539e+01  -0.00000e+00   1.22555e+02
+   3  p2           4.71643e+00   6.46688e+01  -0.00000e+00  -1.55480e+00
+   4  p3          -1.46763e+00   6.25602e+01   0.00000e+00  -1.75255e+01
+   5  p4           2.28979e-01   2.19907e+01   0.00000e+00  -6.37949e+01
+                               ERR DEF= 0.5
+ FCN=38.5229 FROM MIGRAD    STATUS=CONVERGED    1209 CALLS        1210 TOTAL
+                     EDM=5.37114e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.6 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_VWG   1.85086e+03   1.23472e+02  -1.87709e-06  -3.73919e-03
+   2  a2           5.81417e-01   2.89975e-01   3.17231e-07  -2.47647e+00
+   3  a3           3.54502e+00   3.50008e-01   4.51585e-07  -2.43516e+00
+   4  a4          -2.71201e-01   3.28451e-01  -4.56698e-07  -1.19667e+01
+   5  a5           1.82242e-02   3.64815e-02   5.82175e-08  -6.28367e+01
+   6  Normalization_NA60   1.32495e+03   2.87293e+01  -7.81420e-07   7.86431e-02
+   7  mean         3.09860e+00   1.56898e-03  -6.73005e-06  -1.74490e-04
+   8  sigma        6.61978e-02   1.76970e-03   2.76324e-05   4.83584e-03
+   9  lp1          2.26705e-01     fixed    
+  10  lp2          1.24382e+00     fixed    
+  11  lp3          6.11152e-02     fixed    
+  12  rp1          1.82403e-01     fixed    
+  13  rp2          1.39922e+00     fixed    
+  14  rp3          9.39578e-02     fixed    
+  15  lalpha      -9.06862e-01     fixed    
+  16  ralpha       1.89786e+00     fixed    
+  17  Normalization_Psi(2S)   3.06210e+01   1.69940e+01  -1.40942e-06   1.87617e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncNA60VWG_geant3_2.20_4.50
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=CONVERGED   12496 CALLS       12497 TOTAL
+                     EDM=0.00152845    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   6.4 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.14350e+03   1.81361e+02  -0.00000e+00   1.83362e+01
+   2  p1           3.76207e-01   1.33318e-01  -0.00000e+00  -1.66528e+02
+   3  p2           7.89850e-01   1.54288e-01   0.00000e+00   1.11072e+02
+   4  p3           2.13019e-01   8.25548e-02  -0.00000e+00   9.28342e+02
+   5  p4          -7.42547e-03   5.32909e-03   0.00000e+00   7.72757e+03
+                               ERR DEF= 0.5
+ FCN=39.901 FROM MIGRAD    STATUS=CONVERGED    1193 CALLS        1194 TOTAL
+                     EDM=1.84301e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.4 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_VWG   2.02099e+03   2.79202e+02  -4.14059e-06   1.05291e-01
+   2  a2           4.06727e-01   7.66994e-02   3.15295e-06   1.16737e+00
+   3  a3           2.86544e+00   1.59937e+00   2.21417e-05  -3.30737e-01
+   4  a4          -4.84443e-02   3.03071e-01  -6.53823e-06  -4.69808e+00
+   5  a5           1.91789e-03   1.50069e-02   4.44809e-07  -5.99189e+01
+   6  Normalization_NA60   1.32902e+03   2.85987e+01   8.53377e-07   1.37032e-02
+   7  mean         3.09883e+00   1.56385e-03   3.45671e-06  -1.90802e-03
+   8  sigma        6.66023e-02   1.86664e-03   1.20433e-05   4.43276e-03
+   9  lp1          2.21641e-01     fixed    
+  10  lp2          1.36443e+00     fixed    
+  11  lp3          9.89973e-02     fixed    
+  12  rp1          1.82410e-01     fixed    
+  13  rp2          1.38948e+00     fixed    
+  14  rp3          9.02507e-02     fixed    
+  15  lalpha      -7.80270e-01     fixed    
+  16  ralpha       1.90031e+00     fixed    
+  17  Normalization_Psi(2S)   3.60885e+01   1.52912e+01   8.47193e-06  -6.17352e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncNA60VWG_geant3_2.40_4.70
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=CALL LIMIT  50008 CALLS       50009 TOTAL
+                     EDM=0.00986437    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.82272e+03   6.73958e+01  -9.31485e-06  -2.86081e+01
+   2  p1           1.81604e+00   2.20967e+00   2.12696e-05  -3.60966e+02
+   3  p2          -2.42366e-01   4.40116e-01  -4.23412e-06  -2.43605e+02
+   4  p3           6.96495e+00   1.06252e+01   1.02690e-04   2.24769e+02
+   5  p4          -3.36497e+00   9.61666e+00  -9.27472e-05   5.11234e+02
+   6  p5           9.37010e-01   3.79103e+00   3.64933e-05   9.32955e+02
+   7  p6           3.09885e-02   4.51543e-01  -8.69047e-06   3.98254e+02
+                               ERR DEF= 0.5
+ FCN=38.5842 FROM MIGRAD    STATUS=CONVERGED     957 CALLS         958 TOTAL
+                     EDM=4.68608e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.9 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_Pol2overPol3   3.06042e+03   8.98327e+02  -7.34513e-05  -3.52395e-01
+   2  a1           2.06329e+00   1.73836e-01  -1.40476e-06  -1.22021e+01
+   3  a2          -3.50983e-01   5.69265e-02   6.53140e-08  -4.18707e+01
+   4  b1           7.02299e+00   2.01964e-01   4.37407e-06   6.70836e-01
+   5  b2          -2.15356e+00   8.83543e-01  -7.11190e-06   3.02016e+00
+   6  b3           1.13496e+00   1.55980e-01  -1.83216e-06   1.38455e+01
+   7  b4          -3.32679e-02   4.28064e-02   2.03593e-07   1.42188e+01
+   8  Normalization_NA60   1.32686e+03   2.83945e+01   5.87254e-07   2.15287e-02
+   9  mean         3.09867e+00   1.55456e-03  -8.13045e-06  -1.09416e-02
+  10  sigma        6.63934e-02   1.77451e-03  -1.08648e-04  -6.80616e-03
+  11  lp1          2.26705e-01     fixed    
+  12  lp2          1.24382e+00     fixed    
+  13  lp3          6.11152e-02     fixed    
+  14  rp1          1.82403e-01     fixed    
+  15  rp2          1.39922e+00     fixed    
+  16  rp3          9.39578e-02     fixed    
+  17  lalpha      -9.06862e-01     fixed    
+  18  ralpha       1.89786e+00     fixed    
+  19  Normalization_Psi(2S)   3.22466e+01   1.68816e+01  -5.65233e-05   3.27838e-04
+                               ERR DEF= 0.5
+JPsiSignalfitFuncNA60Pol2_geant3_2.20_4.50
+maximum of histogram: 2559
+ FCN=1.02672e+06 FROM MIGRAD    STATUS=FAILED       1606 CALLS        1607 TOTAL
+                     EDM=0.00454154    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.15921e+03   2.32001e+02   2.47358e-03   9.33603e+00
+   2  p1           9.46716e-01   2.86067e-02   2.53927e-05   1.05201e+03
+   3  p2          -1.35615e-01   5.34523e-03   6.40690e-06   4.34725e+03
+   4  p3           3.96584e+00   2.29711e-01   3.35742e-04  -3.37167e+01
+   5  p4           3.36983e-01   9.80448e-02   1.14717e-04  -1.78313e+02
+   6  p5          -2.18087e-02   3.40669e-02   3.47228e-05  -7.89460e+02
+   7  p6           1.45610e-01   9.79728e-03   1.85971e-05  -1.62230e+03
+                               ERR DEF= 0.5
+ FCN=36.6631 FROM MIGRAD    STATUS=CONVERGED    4454 CALLS        4455 TOTAL
+                     EDM=8.28457e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Normalization_Pol2overPol3   4.12549e+03   9.21609e+02   9.99318e-06  -8.75517e-02
+   2  a1          -4.58223e-01   2.22165e-02   6.05464e-09   1.54567e+00
+   3  a2           5.98525e-02   3.93732e-03   1.60354e-09   2.30187e+02
+   4  b1          -1.90946e+00   2.17511e-01   8.80612e-08   1.24362e+01
+   5  b2           3.08619e+00   6.12608e-02   2.66847e-08   2.47233e+01
+   6  b3          -1.19094e+00   2.02601e-02   7.66170e-09   3.09059e+01
+   7  b4           1.45141e-01   4.91638e-03   4.19772e-09  -3.35288e+01
+   8  Normalization_NA60   1.33432e+03   2.88095e+01   2.26960e-05  -5.70794e-02
+   9  mean         3.09781e+00   1.58638e-03   1.20368e-04  -9.58628e-03
+  10  sigma        6.73388e-02   1.86198e-03   1.61421e-04  -1.52604e-02
+  11  lp1          2.21641e-01     fixed    
+  12  lp2          1.36443e+00     fixed    
+  13  lp3          9.89973e-02     fixed    
+  14  rp1          1.82410e-01     fixed    
+  15  rp2          1.38948e+00     fixed    
+  16  rp3          9.02507e-02     fixed    
+  17  lalpha      -7.80270e-01     fixed    
+  18  ralpha       1.90031e+00     fixed    
+  19  Normalization_Psi(2S)   1.72420e+01   1.90425e+01   3.82509e-04   2.95052e-03
+                               ERR DEF= 0.5
+JPsiSignalfitFuncNA60Pol2_geant3_2.40_4.70
+count: 1
+Num Jpsi: 10103.9 +- 244.122
+Mass Jpsi: 3.09842 +- 0.00156026
+Sigma Jpsi: 0.0665945 +- 0.00175192
+Chi2: 0.9281
+count: 2
+Num Jpsi: 10303.1 +- 259.04
+Mass Jpsi: 3.09709 +- 0.00156776
+Sigma Jpsi: 0.0682088 +- 0.00180934
+Chi2: 0.909313
+count: 3
+Num Jpsi: 10168.8 +- 245.05
+Mass Jpsi: 3.09846 +- 0.00151886
+Sigma Jpsi: 0.0669722 +- 0.00177197
+Chi2: 0.987878
+count: 4
+Num Jpsi: 10447.9 +- 248.093
+Mass Jpsi: 3.09715 +- 0.00155628
+Sigma Jpsi: 0.0690137 +- 0.00178462
+Chi2: 0.94879
+count: 5
+Num Jpsi: 10004.2 +- 247.933
+Mass Jpsi: 3.09852 +- 0.00155835
+Sigma Jpsi: 0.0661232 +- 0.00173656
+Chi2: 0.974276
+count: 6
+Num Jpsi: 10324.3 +- 221.854
+Mass Jpsi: 3.09713 +- 0.00155247
+Sigma Jpsi: 0.0683026 +- 0.0017431
+Chi2: 0.932387
+count: 7
+Num Jpsi: 10116.8 +- 265.001
+Mass Jpsi: 3.09781 +- 0.00158606
+Sigma Jpsi: 0.0668518 +- 0.00182302
+Chi2: 0.948873
+count: 8
+Num Jpsi: 10422.7 +- 274.224
+Mass Jpsi: 3.09722 +- 0.00156775
+Sigma Jpsi: 0.0688912 +- 0.00188446
+Chi2: 0.980473
+count: 9
+Num Jpsi: 10281.8 +- 260.888
+Mass Jpsi: 3.0986 +- 0.00156898
+Sigma Jpsi: 0.0661978 +- 0.0017697
+Chi2: 0.929493
+total Num Jpsi: 92173.4
+count: 10
+Num Jpsi: 10353.3 +- 282.969
+Mass Jpsi: 3.09883 +- 0.00156385
+Sigma Jpsi: 0.0666023 +- 0.00186664
+Chi2: 0.962609
+total Num Jpsi: 102527
+count: 11
+Num Jpsi: 10326.7 +- 259.739
+Mass Jpsi: 3.09867 +- 0.00155456
+Sigma Jpsi: 0.0663934 +- 0.00177451
+Chi2: 0.954022
+total Num Jpsi: 112853
+count: 12
+Num Jpsi: 10506.9 +- 287.888
+Mass Jpsi: 3.09781 +- 0.00158638
+Sigma Jpsi: 0.0673388 +- 0.00186198
+Chi2: 0.907639
+total Num Jpsi: 123360
+RMS: 146.112
+RMS: 0.00100062
+RMS: 0.000654731
+10234.6
+256.182
+weight rms:151.935
+weighted mean sigma of jpsi: 0.067127+/-0.00179133
