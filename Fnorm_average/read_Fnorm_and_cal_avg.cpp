@@ -1,4 +1,7 @@
-// This macro is to read Fnorm by other analyzers, and calculate the average Fnorm with different CMUL events. 
+////// ********************************
+// This macro is to read Fnorm obtained by other analyzers, and calculate the average Fnorm by taking weights of different CMUL events. 
+////// ********************************
+
 
 #include <iostream>
 #include <fstream>
@@ -40,10 +43,12 @@ double mean_with_stat_weight(double *, double* , int);
 int main()
 {
 
+//************************************
+//
+// The calculation of Fnorm for LHC15o
+//
+//************************************
 
-//
-// LHC15o
-//
   const int number_methods = 3;
 
   TString path_to_directory = "$HOME/local/anaedPbPbData2015/Fnorm/";
@@ -52,7 +57,7 @@ int main()
   TString path_to_Fnorm[3];
   path_to_Fnorm[0] = Form("%s%s", path_to_directory.Data(), path_to_file.Data() );
   TString name_Fnorm_histo[3];
-  name_Fnorm_histo[0] = "fFNormDirect_CINT7";
+  name_Fnorm_histo[0] = "fFNormDirect_CINT7"; // This variable tells the Fnorm obtained from a given method. 
 
   TString analysis_run_files_location = Form("/home/chunlu/local/runList_LHC15o/runList.txt");
   const int number_of_runs = 137; 
@@ -66,30 +71,52 @@ int main()
   double final_Fnorm_err_LHC15o = 0;
   double Fnorm_fraction_LHC15o[3]={0}; 
 
+//****************************
+//
+// Calculate the average of Fnorm by integrating over runs. This Fnorm is obtained from offline direct method.
+//
+//****************************
+
   avg_Fnorm_LHC15o[0] = read_Fnorm_cal_avg(path_to_Fnorm[0], name_Fnorm_histo[0], analysis_run_files_location, number_of_runs, tstr_alicounter_path, Fnorm_fraction_LHC15o );
   avg_Fnorm_err_LHC15o[0] = sqrt(Fnorm_fraction_LHC15o[2]) / Fnorm_fraction_LHC15o[1];
 
   std::cout << Fnorm_fraction_LHC15o[0] << " / " << Fnorm_fraction_LHC15o[1] << "+/-" << sqrt(Fnorm_fraction_LHC15o[2]) / Fnorm_fraction_LHC15o[1]  << std::endl;
 
+//****************************
+//
+// Calculate the average of Fnorm by integrating over runs. This Fnorm is obtained from offline indirect method.
+//
+//****************************
   name_Fnorm_histo[0] = "fFNormIndirect_CINT7";
   avg_Fnorm_LHC15o[1] = read_Fnorm_cal_avg(path_to_Fnorm[0], name_Fnorm_histo[0], analysis_run_files_location, number_of_runs, tstr_alicounter_path, Fnorm_fraction_LHC15o );
   avg_Fnorm_err_LHC15o[1] = sqrt(Fnorm_fraction_LHC15o[2]) / Fnorm_fraction_LHC15o[1];
   std::cout << Fnorm_fraction_LHC15o[0] << " / " << Fnorm_fraction_LHC15o[1] << "+/-" << avg_Fnorm_err_LHC15o[1]   << std::endl;
 
+//****************************
+//
+// Calculate an average of Fnorm by integrating over runs. This Fnorm is obtained from online method.
+//
+//****************************
   name_Fnorm_histo[0] = "fFNormOnline_C0V0M";
   avg_Fnorm_LHC15o[2] = read_Fnorm_cal_avg(path_to_Fnorm[0], name_Fnorm_histo[0], analysis_run_files_location, number_of_runs, tstr_alicounter_path, Fnorm_fraction_LHC15o );
   avg_Fnorm_err_LHC15o[2] = sqrt(Fnorm_fraction_LHC15o[2]) / Fnorm_fraction_LHC15o[1];
   std::cout << Fnorm_fraction_LHC15o[0] << " / " << Fnorm_fraction_LHC15o[1] << "+/-" << avg_Fnorm_err_LHC15o[2]  << std::endl;
 
-
+//****************************
+//
+// Calculate an average of the three Fnorm obtained above. 
+//
+//****************************
   final_Fnorm_LHC15o = mean_with_stat_weight(avg_Fnorm_LHC15o, avg_Fnorm_err_LHC15o, number_methods);
   final_Fnorm_err_LHC15o = sqrt(1/(pow(1/avg_Fnorm_err_LHC15o[0],2) + pow(1/avg_Fnorm_err_LHC15o[1],2) + pow(1/avg_Fnorm_err_LHC15o[2],2)));
 
   std::cout << final_Fnorm_LHC15o << "+/-" << final_Fnorm_err_LHC15o << std::endl;
 
+//******************************************
 //
-// LHC18q
+// The calculation of Fnorm for LHC18q. Using the same formulas which are shown above.
 //
+//******************************************
   double avg_Fnorm_LHC18q[number_methods] = {0};
   double avg_Fnorm_err_LHC18q[number_methods] = {0};
   double final_Fnorm_LHC18q = 0;
@@ -98,6 +125,12 @@ int main()
   path_to_directory = "$HOME/local/anaedPbPbData2018/Fnorm/";
   path_to_file = "FNormRunByRun_18q.root";
   path_to_Fnorm[1] = Form("%s%s", path_to_directory.Data(), path_to_file.Data() );
+
+//****************************************************
+//
+// For Fnorm obtained from offline direct method
+//
+//****************************************************
 
   name_Fnorm_histo[1] = "fFNormDirect_CINT7";
 
@@ -113,10 +146,22 @@ int main()
   avg_Fnorm_err_LHC18q[0] = sqrt(Fnorm_fraction_LHC18q[2]) / Fnorm_fraction_LHC18q[1];
   std::cout << Fnorm_fraction_LHC18q[0] << " / " << Fnorm_fraction_LHC18q[1] << "+/- " << sqrt(Fnorm_fraction_LHC18q[2]) / Fnorm_fraction_LHC18q[1] << std::endl;
 
+//****************************************************
+//
+// For Fnorm obtained from offline indirect method
+//
+//****************************************************
+
   name_Fnorm_histo[1] = "fFNormIndirect_CINT7";
   avg_Fnorm_LHC18q[1] = read_Fnorm_cal_avg(path_to_Fnorm[1], name_Fnorm_histo[1], analysis_run_files_location, number_of_runs_LHC18q, tstr_alicounter_path, Fnorm_fraction_LHC18q );
   avg_Fnorm_err_LHC18q[1] = sqrt(Fnorm_fraction_LHC18q[2]) / Fnorm_fraction_LHC18q[1];
   std::cout << Fnorm_fraction_LHC18q[0] << " / " << Fnorm_fraction_LHC18q[1] << "+/- " << avg_Fnorm_err_LHC18q[1] << std::endl;
+
+//****************************************************
+//
+// For Fnorm obtained from online method
+//
+//****************************************************
 
   name_Fnorm_histo[1] = "fFNormOnline_C0V0M";
   avg_Fnorm_LHC18q[2] = read_Fnorm_cal_avg(path_to_Fnorm[1], name_Fnorm_histo[1], analysis_run_files_location, number_of_runs_LHC18q, tstr_alicounter_path, Fnorm_fraction_LHC18q );
@@ -127,9 +172,11 @@ int main()
   final_Fnorm_err_LHC18q = sqrt(1/(pow(1/avg_Fnorm_err_LHC18q[0],2) + pow(1/avg_Fnorm_err_LHC18q[1],2) + pow(1/avg_Fnorm_err_LHC18q[2],2)));
   std::cout << final_Fnorm_LHC18q << "+/-" << final_Fnorm_err_LHC18q << std::endl;
 
+//******************************************
 //
-// LHC18r
+// The calculation of Fnorm for LHC18r. Using the same formulas which are shown above.
 //
+//******************************************
 
   path_to_file = "FNormRunByRun_18r.root";
   path_to_Fnorm[2] = Form("%s%s", path_to_directory.Data(), path_to_file.Data() );
@@ -148,15 +195,32 @@ int main()
   double final_Fnorm_LHC18r = 0;
   double final_Fnorm_err_LHC18r=0;
 
+//****************************************************
+//
+// For Fnorm obtained from offline direct method
+//
+//****************************************************
+
   avg_Fnorm_LHC18r[0] = read_Fnorm_cal_avg(path_to_Fnorm[2], name_Fnorm_histo[2], analysis_run_files_location, number_of_runs_LHC18r, tstr_alicounter_path, Fnorm_fraction_LHC18r );
   avg_Fnorm_err_LHC18r[0] = sqrt(Fnorm_fraction_LHC18r[2]) / Fnorm_fraction_LHC18r[1];
   std::cout << Fnorm_fraction_LHC18r[0] << " / " << Fnorm_fraction_LHC18r[1] << " +/- " << sqrt(Fnorm_fraction_LHC18r[2]) / Fnorm_fraction_LHC18r[1]  << std::endl;
 
+//****************************************************
+//
+// For Fnorm obtained from offline indirect method
+//
+//****************************************************
 
   name_Fnorm_histo[2] = "fFNormIndirect_CINT7";
   avg_Fnorm_LHC18r[1] = read_Fnorm_cal_avg(path_to_Fnorm[2], name_Fnorm_histo[2], analysis_run_files_location, number_of_runs_LHC18r, tstr_alicounter_path, Fnorm_fraction_LHC18r );
   avg_Fnorm_err_LHC18r[1] = sqrt(Fnorm_fraction_LHC18r[2]) / Fnorm_fraction_LHC18r[1];
   std::cout << Fnorm_fraction_LHC18r[0] << " / " << Fnorm_fraction_LHC18r[1] << " +/- " << avg_Fnorm_err_LHC18r[1]  << std::endl;
+
+//****************************************************
+//
+// For Fnorm obtained from online method
+//
+//****************************************************
 
   name_Fnorm_histo[2] = "fFNormOnline_C0V0M";
   avg_Fnorm_LHC18r[2] = read_Fnorm_cal_avg(path_to_Fnorm[2], name_Fnorm_histo[2], analysis_run_files_location, number_of_runs_LHC18r, tstr_alicounter_path, Fnorm_fraction_LHC18r );
@@ -168,9 +232,12 @@ int main()
 
   std::cout << final_Fnorm_LHC18r << "+/-" << final_Fnorm_err_LHC18r << std::endl;
 
+//************************************
 //
-// calculate the Fnorm in 3 periods
+// calculate the average Fnorm over the three periods, LHC15o, LHC18q, and LHC18r
 //
+//************************************
+
   double Fnorm_total = 0;
   double Fnorm_total_error = 0;
 
@@ -201,11 +268,11 @@ int main()
 
   std::cout << "Fnorm total: " << Fnorm_total << " +/- " << Fnorm_total_error << std::endl;
 
-//
+//**************************************************
 //
 // calculate the Fnorm directly from LHC15o to LHC18r
 //
-//
+//**************************************************
 /*
   const int number_of_runs[3] = {137, 130, 99};
   TString analysis_run_files_path[3] = {
@@ -222,12 +289,13 @@ int main()
   read_Fnorm_cal_avg_error(path_to_Fnorm, name_Fnorm_histo, analysis_run_files_path, number_of_runs, tstr_alicounter_path, Fnorm_fraction_LHC18r)
 */
 
+//***************************************************  
 //
 // obtain the CMUL events in a given centrality bin
 //
-
+//***************************************************
  
-  int cent_bin[2] = {1, 9}; // 0-20%
+  int cent_bin[2] = {1, 9}; 
   double total_events_LHC15o = 0;
   double total_events_LHC18q = 0;
   double total_events_LHC18r = 0;
@@ -235,17 +303,17 @@ int main()
 
   analysis_run_files_location = Form("/home/chunlu/local/runList_LHC15o/runList.txt");
   tstr_alicounter_path = "$HOME/local/anaedPbPbData2015/LHC15o/muon_calo_pass1/AOD229_CMULEvent_AnaResults/";
-//  total_events_LHC15o = read_alicounter_obtain_events(analysis_run_files_location, number_of_runs, tstr_alicounter_path, cent_bin);
+  total_events_LHC15o = read_alicounter_obtain_events(analysis_run_files_location, number_of_runs, tstr_alicounter_path, cent_bin);
 
   analysis_run_files_location = Form("/home/chunlu/local/runList_LHC18q/muon_calo_pass2/LHC18q_runList.txt");
   tstr_alicounter_path = "$HOME/local/anaedPbPbData2018/LHC18q_r/muon_calo_pass3/AOD225_CMULEvent_AnaResults/";
-//  total_events_LHC18q = read_alicounter_obtain_events(analysis_run_files_location, number_of_runs_LHC18q, tstr_alicounter_path, cent_bin);
+  total_events_LHC18q = read_alicounter_obtain_events(analysis_run_files_location, number_of_runs_LHC18q, tstr_alicounter_path, cent_bin);
 
   analysis_run_files_location = Form("/home/chunlu/local/runList_LHC18r/muon_calo_pass2/LHC18r_runList.txt");
   tstr_alicounter_path = "$HOME/local/anaedPbPbData2018/LHC18q_r/muon_calo_pass3/AOD225_CMULEvent_AnaResults/";
-//  total_events_LHC18r = read_alicounter_obtain_events(analysis_run_files_location, number_of_runs_LHC18r, tstr_alicounter_path, cent_bin);
+  total_events_LHC18r = read_alicounter_obtain_events(analysis_run_files_location, number_of_runs_LHC18r, tstr_alicounter_path, cent_bin);
 
-  total_events = (total_events_LHC15o+total_events_LHC18q+total_events_LHC18r);
+  total_events = (total_events_LHC15o + total_events_LHC18q + total_events_LHC18r);
 
   std::cout << "centrality 0-90%" << std::endl;
   std::cout << "LHC15o: " << total_events_LHC15o << std::endl;
@@ -260,6 +328,11 @@ return 0;
 
 double read_alicounter_obtain_events(TString analysis_run_files_location, const int number_of_runs, TString tstr_alicounter_path, int *cent_bin)
 {
+//********************************************
+//
+// This function returns the total number of the CMUL events, for a given range, for a given period. 
+//
+//********************************************
 
       int run_number[number_of_runs] = {0};
       TString tstr_run_number[number_of_runs]={};
@@ -304,11 +377,12 @@ return total_numberOfevents;
 
 double read_Fnorm_cal_avg(TString path_to_Fnorm, TString name_Fnorm_histo, TString analysis_run_files_location, const int number_of_runs, TString tstr_alicounter_path, double *Fnorm_fraction)
 {
+  // *************************************
   //
-  //
-  // read the Fnorm histogram
-  //
-  //  
+  // This function returns the average Fnorm integrating over the run numbers
+  // 
+  // *************************************
+
 //      TString path_to_directory = "$HOME/local/anaedPbPbData2015/Fnorm/";
 //      TString path_to_file = "Fnorm_offline_LHC15o.root";
 
@@ -573,6 +647,12 @@ double read_Fnorm_cal_avg_error(TString *path_to_Fnorm, TString *name_Fnorm_hist
 
 double mean_with_stat_weight(double *value, double* err_value, int number_methods)
 {
+// ****************************
+//
+// This function returns a mathmetical average by taking into account the statistical uncertainty as weights. 
+//
+// ****************************
+	
   double mean_weighted=0;
   double numerator = 0;
   double denominator = 0;
