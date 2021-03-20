@@ -1,8 +1,8 @@
 //--------------------------------------------------------------------------
-// Base macro for analyzing the analysis task output file.
-// Usage: `root-config --libs --cflags` -I${ALICE_ROOT}/include -L${ALICE_ROOT}/lib -lSTEERBase
-// Input: 
-// Output: 
+// Base macro for extracting the charmonium signal obtained from analysis task output file.
+// Compile: g++ this_file `root-config --libs --cflags` -I${ALICE_ROOT}/include -L${ALICE_ROOT}/lib -lSTEERBase
+//
+//  
 //--------------------------------------------------------------------------
 
 #include <iostream>
@@ -136,14 +136,17 @@ struct fit_variable_results fitJPsi_Psi2S(int, double, double, TH1F*, TF1*, TF1*
 double calRMS(int ,double *, double );
 double calWeightAverage(int , double *, double *);
 double calWeightRMS(int , double *, double *);
-//double calWeightRMS
+
 //TString opt="IRS0"; //fitting parameters
 TString opt="IRSL0";
 TString opt2="IRS0"; // for subtracted mass spectrum fitting
+//***********************************
+// Fit parameter explanation:
 //"R" Use the Range specified in the function range
 //"S" The result of the fit is returned in the TFitResultPtr 
 //"L" Likelihood
 //"0" Do not plot the function after fit. Must be used because the global fit function is draw also so use this option to avoid drawing twice at the end
+//***********************************
 
 int main()
 {
@@ -159,11 +162,15 @@ int main()
 
 //--------------------------------------------------------------------------------------
 //
-// Initialize the Histograms for pT dependence
+// Initialize histograms for dimuon mass events in different pT bins
 //
 //--------------------------------------------------------------------------------------  
 
-// For direct fit
+//****************************
+//
+// Histograms for direct fit
+//
+//****************************
 
     TH1F *histoRawInvM = new TH1F(Form("histoRaw%sInvM", dimuonChargeNames[1].Data() ), Form("dimuon invariant mass distribution integrated over p_{T} ; M_{#mu#mu} (GeV/c^{2}); Events per %g GeV", (upperLimit_histoInvMass-lowerLimit_histoInvMass)/NUMOFBINS), NUMOFBINS,lowerLimit_histoInvMass,upperLimit_histoInvMass);
     histoRawInvM->Sumw2();
@@ -184,8 +191,11 @@ int main()
          histoInvMass[iPt]->SetAxisRange(2,5,"X");
     }
 
-
-//For subtracted fit
+// **************************************
+//
+// Histograms for subtracted fit
+//
+// **************************************
 
     TH1F *histoSubRawInvM = new TH1F(Form("histoSubRaw%sInvM", dimuonChargeNames[1].Data() ), Form("dimuon invariant mass distribution integrated over p_{T}; M_{#mu#mu} (GeV/c^{2}); Events per %g GeV", (upperLimit_histoInvMass-lowerLimit_histoInvMass)/NUMOFBINS ), NUMOFBINS, lowerLimit_histoInvMass,upperLimit_histoInvMass);
     histoSubRawInvM->Sumw2();
@@ -209,7 +219,7 @@ int main()
 
 //--------------------------------------------------------------------------------------
 //
-// Initialize the Histograms for y dependence
+// Initialize histograms for dimuon mass events in different y bins
 //
 //-------------------------------------------------------------------------------------- 
 
@@ -229,7 +239,7 @@ int main()
 
  //--------------------------------------------------------------------------------------
  //
- // Read raw root file to be ready for the fitting
+ // Read raw root file for fitting
  //
  //--------------------------------------------------------------------------------------
     TFile *inputFile;    
